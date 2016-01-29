@@ -18,8 +18,6 @@
 		89AAF2DB1C5B85F6002AD421 /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF2CD1C5B85F6002AD421 /* UIColor+Extend.m */; };
 		89AAF2DC1C5B85F6002AD421 /* CoreCategory.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89AAF2CF1C5B85F6002AD421 /* CoreCategory.bundle */; };
 		89AAF2DD1C5B85F6002AD421 /* UIImage+ReMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF2D11C5B85F6002AD421 /* UIImage+ReMake.m */; };
-		89AAF2DE1C5B85F6002AD421 /* UITableViewCell+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF2D51C5B85F6002AD421 /* UITableViewCell+Extend.m */; };
-		89AAF2DF1C5B85F6002AD421 /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF2D81C5B85F6002AD421 /* UIView+Extend.m */; };
 		89AAF2E21C5B8657002AD421 /* OCWebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AAF2E11C5B8657002AD421 /* OCWebImageView.m */; };
 /* End PBXBuildFile section */
 
@@ -43,12 +41,9 @@
 		89AAF2CF1C5B85F6002AD421 /* CoreCategory.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreCategory.bundle; sourceTree = "<group>"; };
 		89AAF2D01C5B85F6002AD421 /* UIImage+ReMake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ReMake.h"; sourceTree = "<group>"; };
 		89AAF2D11C5B85F6002AD421 /* UIImage+ReMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ReMake.m"; sourceTree = "<group>"; };
-		89AAF2D41C5B85F6002AD421 /* UITableViewCell+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extend.h"; sourceTree = "<group>"; };
-		89AAF2D51C5B85F6002AD421 /* UITableViewCell+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extend.m"; sourceTree = "<group>"; };
-		89AAF2D71C5B85F6002AD421 /* UIView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
-		89AAF2D81C5B85F6002AD421 /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
 		89AAF2E01C5B8657002AD421 /* OCWebImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCWebImageView.h; sourceTree = "<group>"; };
 		89AAF2E11C5B8657002AD421 /* OCWebImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCWebImageView.m; sourceTree = "<group>"; };
+		89AAF3011C5B8903002AD421 /* OCCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCategory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +105,7 @@
 				89AAF2CB1C5B85F6002AD421 /* UIColor */,
 				89AAF2CE1C5B85F6002AD421 /* UIImage */,
 				89AAF2D21C5B85F6002AD421 /* UIImageView */,
-				89AAF2D31C5B85F6002AD421 /* UITableViewCell */,
-				89AAF2D61C5B85F6002AD421 /* UIView */,
+				89AAF3011C5B8903002AD421 /* OCCategory.h */,
 			);
 			path = OCCategory;
 			sourceTree = "<group>";
@@ -153,24 +147,6 @@
 				89AAF2E11C5B8657002AD421 /* OCWebImageView.m */,
 			);
 			path = UIImageView;
-			sourceTree = "<group>";
-		};
-		89AAF2D31C5B85F6002AD421 /* UITableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				89AAF2D41C5B85F6002AD421 /* UITableViewCell+Extend.h */,
-				89AAF2D51C5B85F6002AD421 /* UITableViewCell+Extend.m */,
-			);
-			path = UITableViewCell;
-			sourceTree = "<group>";
-		};
-		89AAF2D61C5B85F6002AD421 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				89AAF2D71C5B85F6002AD421 /* UIView+Extend.h */,
-				89AAF2D81C5B85F6002AD421 /* UIView+Extend.m */,
-			);
-			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +221,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				89AAF2DD1C5B85F6002AD421 /* UIImage+ReMake.m in Sources */,
-				89AAF2DF1C5B85F6002AD421 /* UIView+Extend.m in Sources */,
 				89AAF2B61C5B85E0002AD421 /* ViewController.m in Sources */,
 				89AAF2DB1C5B85F6002AD421 /* UIColor+Extend.m in Sources */,
 				89AAF2B31C5B85E0002AD421 /* AppDelegate.m in Sources */,
@@ -253,7 +228,6 @@
 				89AAF2B01C5B85E0002AD421 /* main.m in Sources */,
 				89AAF2E21C5B8657002AD421 /* OCWebImageView.m in Sources */,
 				89AAF2D91C5B85F6002AD421 /* NSString+APPExtend.m in Sources */,
-				89AAF2DE1C5B85F6002AD421 /* UITableViewCell+Extend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +376,7 @@
 				89AAF2C41C5B85E0002AD421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

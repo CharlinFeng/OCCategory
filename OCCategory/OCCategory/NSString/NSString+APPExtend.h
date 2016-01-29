@@ -10,7 +10,7 @@
 
 @interface NSString (APPExtend)
 
-@property (nonatomic,copy,readonly) NSString *ResourceURL;
+@property (nonatomic,copy,readonly) NSString *resourceURL_OC,*completeURL_OC;
 
 
 @end

@@ -9,12 +9,13 @@
 #import "NSString+APPExtend.h"
 
 
-NSString const * ResourceURL = @"http://112.74.125.78";
+NSString const * HOST = @"http://112.74.125.78";
 
 @implementation NSString (APPExtend)
 
--(NSString *)ResourceURL{if (self.length == 0) return nil;return [NSString stringWithFormat:@"%@%@",ResourceURL,self];}
+-(NSString *)resourceURL_OC{if (self.length == 0) return nil;return [NSString stringWithFormat:@"%@%@",HOST,self];}
 
+-(NSString *)completeURL_OC{if (self.length == 0) return nil;return [NSString stringWithFormat:@"%@%@",HOST,self];}
 
 
 @end
