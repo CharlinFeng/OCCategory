@@ -28,7 +28,7 @@
         [result appendFormat:@"%02x", digest[i]];
     }
     
-    return [result copy];
+    return result.uppercaseString.copy;
 }
 
 
@@ -51,7 +51,7 @@
         [result appendFormat:@"%02x", digest[i]];
     }
     
-    return [result copy];
+    return result.uppercaseString.copy;
 }
 
 
