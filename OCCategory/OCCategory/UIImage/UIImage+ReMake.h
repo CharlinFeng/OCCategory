@@ -19,6 +19,6 @@
 
 +(UIImage *)placeHolderImageWithSize:(CGSize)fullSize;
 
-
++(UIImage *)placeHolderWithWH:(CGFloat)wh s:(CGFloat)s;
 
 @end

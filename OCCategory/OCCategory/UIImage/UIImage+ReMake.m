@@ -50,8 +50,13 @@
 }
 
 +(UIImage *)placeHolderImageWithSize:(CGSize)fullSize{
-
+    
     return [self placeHolderImageWithSize:fullSize scale:0.2];
+}
+
++(UIImage *)placeHolderWithWH:(CGFloat)wh s:(CGFloat)s{
+    
+    return [self placeHolderImageWithSize:CGSizeMake(wh, wh) scale:s];
 }
 
 @end
